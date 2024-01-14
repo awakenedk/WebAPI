@@ -1,0 +1,66 @@
+[
+    {
+     "id": 2,
+     "name": "Strawberry Moutain",
+     "price": 500,
+     "path": "src\/assets\/img\/bakery\/cake (4).png",
+     "active": true,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ"
+    },
+    {
+     "id": 1,
+     "name": "Choco Reindeer Shorts",
+     "price": 500,
+     "path": "src\/assets\/img\/bakery\/cake (7).png",
+     "active": true,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ"
+    },
+    {
+     "id": 8,
+     "name": "Blueberry Pie",
+     "price": 500,
+     "path": "src\/assets\/img\/bakery\/cake (10).png",
+     "active": true,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ"
+    },
+    {
+     "id": 5,
+     "name": "Mocca Macadamia",
+     "price": 500,
+     "path": "src\/assets\/img\/bakery\/cake (5).png",
+     "active": true,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ"
+    },
+    {
+     "id": 7,
+     "name": "Strawberry Velvet",
+     "price": 500,
+     "path": "src\/assets\/img\/bakery\/cake (9).png",
+     "active": true,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ"
+    },
+    {
+     "id": 6,
+     "name": "Santa Cookie",
+     "price": 200,
+     "path": "src\/assets\/img\/bakery\/cake.png",
+     "active": true,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ"
+    },
+    {
+     "id": 3,
+     "name": "C003",
+     "price": 2500,
+     "path": "src\/assets\/img\/Fashion\/Mermaid (5).png",
+     "active": false,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ"
+    },
+    {
+     "id": 4,
+     "name": "C004",
+     "price": 2500,
+     "path": "src\/assets\/img\/Fashion\/Mermaid (4).png",
+     "active": false,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ"
+    }
+   ]
