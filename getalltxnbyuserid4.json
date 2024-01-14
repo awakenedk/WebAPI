@@ -5,8 +5,8 @@
      "product_name": "Mocca Macadamia",
      "path": "src\/assets\/img\/bakery\/cake (5).png",
      "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "sum": 500,
-     "uid-2": 1
+     "total_price": 500,
+     "total_qty": 1
     },
     {
      "uid": 4,
@@ -14,8 +14,8 @@
      "product_name": "Strawberry Velvet",
      "path": "src\/assets\/img\/bakery\/cake (9).png",
      "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "sum": 1000,
-     "uid-2": 2
+     "total_price": 1000,
+     "total_qty": 2
     },
     {
      "uid": 4,
@@ -23,7 +23,7 @@
      "product_name": "Strawberry Moutain",
      "path": "src\/assets\/img\/bakery\/cake (4).png",
      "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "sum": 1000,
-     "uid-2": 2
+     "total_price": 1000,
+     "total_qty": 2
     }
    ]
