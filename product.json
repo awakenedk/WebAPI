@@ -11,7 +11,7 @@
     },
     {
      "id": 2,
-     "name": "Strawberry Moutain",
+     "name": "C01",
      "is_soldout": true,
      "path": "\/images\/bakery\/cake (4).png",
      "price": 500,
@@ -21,7 +21,7 @@
     },
     {
      "id": 8,
-     "name": "Blueberry Pie",
+     "name": "C02",
      "is_soldout": true,
      "path": "\/images\/bakery\/cake (10).png",
      "price": 500,
@@ -31,7 +31,7 @@
     },
     {
      "id": 6,
-     "name": "Santa Cookie",
+     "name": "C03",
      "is_soldout": false,
      "path": "\/images\/bakery\/cake (12).png",
      "price": 200,
@@ -41,7 +41,7 @@
     },
     {
      "id": 7,
-     "name": "Strawberry Velvet",
+     "name": "C04",
      "is_soldout": true,
      "path": "\/images\/bakery\/cake (9).png",
      "price": 500,
@@ -51,7 +51,7 @@
     },
     {
      "id": 1,
-     "name": "Choco Reindeer Shorts",
+     "name": "C05",
      "is_soldout": true,
      "path": "\/images\/bakery\/cake (7).png",
      "price": 500,
