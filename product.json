@@ -1,90 +1,62 @@
 [
     {
-     "id": 2,
-     "name": "Strawberry Moutain",
-     "path": "\/images\/bakery\/cake (4).png",
-     "price": 500,
-     "active": true,
-     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "qty": 10,
-     "created_date": "2024-01-15 00:00:00",
-     "updated_date": "2024-01-15 00:00:00"
-    },
-    {
-     "id": 1,
-     "name": "Choco Reindeer Shorts",
-     "path": "\/images\/bakery\/cake (7).png",
-     "price": 500,
-     "active": true,
-     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "qty": 10,
-     "created_date": "2024-01-15 00:00:00",
-     "updated_date": "2024-01-15 00:00:00"
-    },
-    {
-     "id": 8,
-     "name": "Blueberry Pie",
-     "path": "\/images\/bakery\/cake (10).png",
-     "price": 500,
-     "active": true,
-     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "qty": 10,
-     "created_date": "2024-01-15 00:00:00",
-     "updated_date": "2024-01-15 00:00:00"
-    },
-    {
      "id": 5,
      "name": "Mocca Macadamia",
+     "is_soldout": true,
      "path": "\/images\/bakery\/cake (5).png",
      "price": 500,
      "active": true,
      "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "qty": 10,
-     "created_date": "2024-01-15 00:00:00",
-     "updated_date": "2024-01-15 00:00:00"
+     "qty": 10
     },
     {
-     "id": 7,
-     "name": "Strawberry Velvet",
-     "path": "\/images\/bakery\/cake (9).png",
+     "id": 2,
+     "name": "Strawberry Moutain",
+     "is_soldout": true,
+     "path": "\/images\/bakery\/cake (4).png",
      "price": 500,
      "active": true,
      "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "qty": 10,
-     "created_date": "2024-01-15 00:00:00",
-     "updated_date": "2024-01-15 00:00:00"
+     "qty": 10
     },
     {
-     "id": 3,
-     "name": "C003",
-     "path": "\/images\/Fashion\/Mermaid (5).png",
-     "price": 2500,
-     "active": false,
+     "id": 8,
+     "name": "Blueberry Pie",
+     "is_soldout": true,
+     "path": "\/images\/bakery\/cake (10).png",
+     "price": 500,
+     "active": true,
      "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "qty": 10,
-     "created_date": "2024-01-15 00:00:00",
-     "updated_date": "2024-01-15 00:00:00"
-    },
-    {
-     "id": 4,
-     "name": "C004",
-     "path": "\/images\/Fashion\/Mermaid (4).png",
-     "price": 2500,
-     "active": false,
-     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "qty": 10,
-     "created_date": "2024-01-15 00:00:00",
-     "updated_date": "2024-01-15 00:00:00"
+     "qty": 10
     },
     {
      "id": 6,
      "name": "Santa Cookie",
+     "is_soldout": false,
      "path": "\/images\/bakery\/cake (12).png",
      "price": 200,
      "active": true,
      "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
-     "qty": 10,
-     "created_date": "2024-01-15 00:00:00",
-     "updated_date": "2024-01-15 00:00:00"
+     "qty": 0
+    },
+    {
+     "id": 7,
+     "name": "Strawberry Velvet",
+     "is_soldout": true,
+     "path": "\/images\/bakery\/cake (9).png",
+     "price": 500,
+     "active": true,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
+     "qty": 10
+    },
+    {
+     "id": 1,
+     "name": "Choco Reindeer Shorts",
+     "is_soldout": true,
+     "path": "\/images\/bakery\/cake (7).png",
+     "price": 500,
+     "active": true,
+     "detail": "ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ ทดสอบ",
+     "qty": 10
     }
    ]
