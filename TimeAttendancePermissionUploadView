@@ -1,0 +1,149 @@
+@model List<PermissionFileHistoryViewModel>
+
+@{
+    ViewData["Title"] = "Permission File Upload";
+}
+
+<div class="dashboard-wrap">
+    <aside class="dashboard-sidebar">
+        <div class="brand">TIME ATTENDANCE</div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#">Timesheet Evidence</a></li>
+                <li><a href="#">Missed Punch/Correction Form</a></li>
+                <li class="highlight"><a href="#">Permission File Upload</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section class="dashboard-main">
+        <header class="page-header">
+            <h2>Permission File Upload</h2>
+        </header>
+
+        <div class="permission-page">
+            <div class="permission-top-section">
+                <div class="permission-card upload-card">
+                    <div class="section-title">Upload New Permission File</div>
+                    <div class="section-subtitle">
+                        Import permission file for updating user access in the attendance system.
+                    </div>
+
+                    <form asp-action="UploadPermissionFile" asp-controller="Permission" method="post" enctype="multipart/form-data">
+                        <div class="upload-dropzone">
+                            <div class="upload-icon">📄</div>
+                            <div class="upload-text">
+                                <strong>Select file to upload</strong>
+                                <div class="upload-hint">Supported format: .xlsx, .csv</div>
+                            </div>
+
+                            <div class="upload-control">
+                                <input type="file" name="permissionFile" id="permissionFile" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="upload-meta-row">
+                            <div class="meta-field">
+                                <label class="form-label">Effective Date</label>
+                                <input type="date" name="effectiveDate" class="form-control" />
+                            </div>
+
+                            <div class="meta-field">
+                                <label class="form-label">Remarks</label>
+                                <input type="text" name="remarks" class="form-control" placeholder="Enter remarks..." />
+                            </div>
+                        </div>
+
+                        <div class="upload-actions">
+                            <button type="submit" class="btn btn-success">Upload File</button>
+                            <button type="reset" class="btn btn-light">Clear</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="permission-card guide-card">
+                    <div class="section-title">File Guideline</div>
+                    <ul class="guide-list">
+                        <li>File must contain valid staff permission data.</li>
+                        <li>Only approved template format is allowed.</li>
+                        <li>Duplicate staff records should be avoided.</li>
+                        <li>Please verify data before uploading.</li>
+                    </ul>
+
+                    <div class="template-box">
+                        <div class="template-title">Template File</div>
+                        <div class="template-desc">Download the latest template before preparing your upload file.</div>
+                        <button class="btn btn-outline-template">Download Template</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="permission-card history-card">
+                <div class="history-header">
+                    <div>
+                        <div class="section-title">Upload History</div>
+                        <div class="section-subtitle">Recently uploaded permission files</div>
+                    </div>
+
+                    <div class="header-actions">
+                        <button class="btn btn-primary">Refresh</button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table flat-summary-table permission-history-table">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+                                <th>Uploaded By</th>
+                                <th>Upload Date</th>
+                                <th>Effective Date</th>
+                                <th>Records</th>
+                                <th>Status</th>
+                                <th>Remarks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Any())
+                            {
+                                @foreach (var item in Model)
+                                {
+                                    <tr class="record-row">
+                                        <td>@item.FileName</td>
+                                        <td>@item.UploadedBy</td>
+                                        <td>@item.UploadDate.ToString("M/d/yyyy h:mm tt")</td>
+                                        <td>@item.EffectiveDate?.ToString("M/d/yyyy")</td>
+                                        <td>@item.TotalRecords</td>
+                                        <td>
+                                            <span class="status-badge status-@item.Status?.ToLower().Replace(" ", "-")">
+                                                @item.Status
+                                            </span>
+                                        </td>
+                                        <td>@item.Remarks</td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="7" class="text-center">No upload history available</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-footer">
+                    <div class="left">Items per page: <strong>10</strong> &nbsp; 1-10 of 100</div>
+                    <div class="pagination">
+                        <button class="btn btn-sm btn-light">&lt;</button>
+                        <button class="btn btn-sm btn-primary">1</button>
+                        <button class="btn btn-sm btn-light">2</button>
+                        <button class="btn btn-sm btn-light">3</button>
+                        <button class="btn btn-sm btn-light">&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
