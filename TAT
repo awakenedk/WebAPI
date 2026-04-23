@@ -1,0 +1,78 @@
+        [HttpPost]
+        public IActionResult UploadPermissionFile(IFormFile permissionFile, DateTime? effectiveDate, string remarks)
+        {
+            if (permissionFile == null || permissionFile.Length == 0)
+            {
+                TempData["Error"] = "Please select a file.";
+                return RedirectToAction("Index");
+            }
+
+            try
+            {
+                var fileName = Path.GetFileName(permissionFile.FileName);
+                var extension = Path.GetExtension(fileName).ToLower();
+
+                if (extension != ".xlsx" && extension != ".csv")
+                {
+                    TempData["Error"] = "Only .xlsx or .csv files are allowed.";
+                    return RedirectToAction("Index");
+                }
+
+                // 🔥 ตรงนี้คือที่แอมจะเอาไป parse Excel ต่อในอนาคต
+                using (var stream = new MemoryStream())
+                {
+                    permissionFile.CopyTo(stream);
+
+                    // TODO:
+                    // - อ่าน Excel (ClosedXML / EPPlus)
+                    // - Validate data
+                    // - Insert DB
+                }
+
+                TempData["Success"] = "File uploaded successfully.";
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = ex.Message;
+            }
+
+            return RedirectToAction("Index");
+        }
+    }
+}
+--------
+
+var result = _permissionService.ProcessFile(stream);
+-------
+public class UploadResult
+{
+    public int SuccessCount { get; set; }
+    public int FailCount { get; set; }
+    public List<string> Errors { get; set; }
+}
+
+------
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+
+-----
+
+public class PermissionFileHistoryViewModel
+{
+    public string FileName { get; set; }
+    public string UploadedBy { get; set; }
+    public DateTime UploadDate { get; set; }
+    public DateTime? EffectiveDate { get; set; }
+    public int TotalRecords { get; set; }
+    public string Status { get; set; }
+    public string Remarks { get; set; }
+}
