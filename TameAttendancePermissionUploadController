@@ -1,0 +1,35 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace TimeAttendance.Controllers
+{
+    public class PermissionController : Controller
+    {
+        // หน้า Upload (GET)
+        public IActionResult Index()
+        {
+            var mockData = new List<PermissionFileHistoryViewModel>
+            {
+                new PermissionFileHistoryViewModel
+                {
+                    FileName = "permission_apr.xlsx",
+                    UploadedBy = "Amp",
+                    UploadDate = DateTime.Now.AddMinutes(-30),
+                    EffectiveDate = DateTime.Today,
+                    TotalRecords = 120,
+                    Status = "Success",
+                    Remarks = "Initial upload"
+                },
+                new PermissionFileHistoryViewModel
+                {
+                    FileName = "permission_fix.xlsx",
+                    UploadedBy = "Admin",
+                    UploadDate = DateTime.Now.AddHours(-2),
+                    EffectiveDate = DateTime.Today,
+                    TotalRecords = 45,
+                    Status = "Failed",
+                    Remarks = "Invalid format"
+                }
+            };
+
+            return View(mockData);
+        }
